@@ -1,0 +1,118 @@
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url("C:/Users/kambh/Downloads/todo image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay for dulling the background image */
+.signup-wrapper .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* dull effect */
+  z-index: 0;
+}
+
+/* Signup form */
+.signup-form {
+  position: relative;
+  z-index: 1;
+  background: #da1f6a; /* light pink background */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000;
+}
+
+/* Inputs */
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+.signup-form input::placeholder {
+  color: #555;
+}
+
+/* Signup button (smaller) */
+.signup-form button {
+  width: 60%;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #0a224e;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.signup-form button:hover {
+  background-color: #f2d1dc;
+}
+
+.input-error {
+  color: white;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.input-success {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-redirect {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.login-redirect button {
+  background-color: #fff;
+  color: #0a224e;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-redirect button:hover {
+  background-color: #f2d1dc;
+}

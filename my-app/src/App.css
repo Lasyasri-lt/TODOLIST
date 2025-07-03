@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9c4; /* Light yellow fallback */
+  background-image: url("C:\Lasyasri\my-app\public\assets\todo-image.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Light dull overlay */
+  z-index: 0;
+}
+
+/* =====================
+   Welcome Page Styles
+===================== */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.welcome button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome button:hover {
+  background-color: #1c1a1a;
+  color: white;
+}
+
+/* =====================
+   Auth Pages (Signup/Login)
+===================== */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #05296b, #2a5298);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(48, 47, 47, 0.3);
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.auth-form input::placeholder {
+  color: #555;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #05296b;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #dbe9f3;
+}
+
+/* =====================
+   Todo Page Styles (Optional)
+===================== */
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.container.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select {
+  margin: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.filter-section {
+  margin: 20px 0;
+}
+
+.task {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-info span.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+button.edit {
+  background-color: orange;
+  border: none;
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+button.delete {
+  background-color: crimson;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: white;
+}

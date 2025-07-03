@@ -1,0 +1,62 @@
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url("C:/Users/kambh/Downloads/todo image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.flow-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 0;
+}
+
+.flow-step h1, .flow-step h2, .flow-step p, .flow-step button {
+  z-index: 1;
+  position: relative;
+}
+
+.flow-step h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.flow-step p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.flow-step button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+
+.flow-step button:hover {
+  background-color: #444;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
